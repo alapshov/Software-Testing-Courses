@@ -16,22 +16,26 @@ namespace Software_Testing_Courses
         [SetUp]
         public void start()
         {
-            driver = new ChromeDriver(@"C:\Driver"); //Указать путь к драйверу
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));           
-
+            /*Указать путь к драйверу можно прямо в конструктор объекта ChromeDriver, 
+             * таким образом исполняемый файл драйвера 
+             * не нужно будет добавлять в переменные среды */
+            driver = new ChromeDriver(@"C:\Driver"); 
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            driver.Manage().Window.Maximize();
         }
         [Test]
         public void FirstTest()
         {
-            driver.Url = "https://www.google.ru";
-            driver.FindElement(By.Name("q")).SendKeys("Тестовый поиск");
-            driver.FindElement(By.XPath(@"//*[@id=""sbtc""]/div[2]/div[2]/div[1]/div/ul/li[2]/div/span[1]/span/input")).Click();
+            driver.Url = "https://www.google.ru";            
+            driver.FindElement(By.Name("q")).SendKeys("webdriver");            
+            driver.FindElement(By.Name("btnK")).Click();
+            wait.Until(ExpectedConditions.TitleIs("webdriver - Поиск в Google"));
         }
         [TearDown]
         public void stop()
         {
-            driver.Quit();
-            driver = null;
+           driver.Quit();
+           driver = null;
         }
 
     }
