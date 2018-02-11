@@ -1,5 +1,5 @@
-D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.csprojResolveAssemblyReference.cache
-D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.csproj.CoreCompileInputs.cache
+D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\WebDriver.Support.xml
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\NUnit3.TestAdapter.dll
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\nunit.engine.dll
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\nunit.engine.api.dll
@@ -18,9 +18,8 @@ D:\Программирование\GitRepository\Software-Testing-Courses\Softw
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\WebDriver.dll
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\WebDriver.Support.dll
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
-D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\nunit.framework.xml
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\WebDriver.xml
-D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\WebDriver.Support.xml
+D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.csproj.CoreCompileInputs.cache
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.dll
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.pdb
