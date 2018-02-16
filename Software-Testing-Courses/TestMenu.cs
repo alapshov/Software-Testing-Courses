@@ -47,8 +47,6 @@ namespace Software_Testing_Courses
                 for (int j = 0; j < subMenuElements.Count; j++)
                 {
                     menuElements = driver.FindElements(By.Id("app-"));
-                    menuElements[i].Click();
-                    menuElements = driver.FindElements(By.Id("app-"));
                     subMenuElements = menuElements[i].FindElement(By.TagName("ul"))
                         .FindElements(By.TagName("li"));
                     subMenuElements[j].Click();

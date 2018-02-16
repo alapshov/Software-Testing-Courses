@@ -63,6 +63,7 @@
     <Compile Include="MyFirstTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StartBrowsers.cs" />
+    <Compile Include="StikerTest.cs" />
     <Compile Include="TestMenu.cs" />
   </ItemGroup>
   <ItemGroup>

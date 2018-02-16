@@ -18,7 +18,7 @@ namespace Software_Testing_Courses
             /*Указать путь к драйверу можно прямо в конструктор объекта ChromeDriver, 
              * таким образом исполняемый файл драйвера 
              * не нужно будет добавлять в переменные среды */
-            driver = new ChromeDriver(@"C:\Driver"); 
+            driver = new ChromeDriver(); 
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             driver.Manage().Window.Maximize();
         }
