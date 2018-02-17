@@ -50,7 +50,7 @@ namespace Software_Testing_Courses
                     subMenuElements = menuElements[i].FindElement(By.TagName("ul"))
                         .FindElements(By.TagName("li"));
                     subMenuElements[j].Click();
-                    //Порверяем существование элемента с тегом h1 после каждого клика
+                    //Проверяем существование элемента с тегом h1 после каждого клика
                     driver.FindElement(By.TagName("h1"));
                 }
             }

@@ -16,7 +16,7 @@ namespace Software_Testing_Courses
         public void start()
         {
             
-            driver = new ChromeDriver(@"C:\Driver");
+            driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             driver.Manage().Window.Maximize();
         }

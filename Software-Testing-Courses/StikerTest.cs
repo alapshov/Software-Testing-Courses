@@ -36,10 +36,9 @@ namespace Software_Testing_Courses
                     .FindElements(By.CssSelector("div[class='sticker sale']"));
                 //Считаем количество стикеров new + sale, 
                 int count = stikerNewElements.Count + stikerSaleElements.Count;
-                //Проверяем что на кажды товар приходится один стикер
-                Assert.IsTrue(count == 1);
+                //Проверяем что на каждый товар приходится один стикер
+                Assert.IsTrue(count == 2, "Количество стикеров на товаре не равно 1");
             }
-
 
         }
         [TearDown]
