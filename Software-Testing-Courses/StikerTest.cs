@@ -15,6 +15,8 @@ namespace Software_Testing_Courses
         private ReadOnlyCollection<IWebElement> productElements;
         private ReadOnlyCollection<IWebElement> stikerNewElements;
         private ReadOnlyCollection<IWebElement> stikerSaleElements;
+        private bool flag = true;
+        string message;
 
         [SetUp]
         public void start()
@@ -26,6 +28,7 @@ namespace Software_Testing_Courses
         [Test]
         public void LiteCartStikerTest()
         {
+            
             driver.Url = "http://litecart-lapshov.ru/";
             productElements = driver.FindElements(By.CssSelector("li[class='product column shadow hover-light']"));
             for(int i = 0; i < productElements.Count; i++)
@@ -37,9 +40,15 @@ namespace Software_Testing_Courses
                 //Считаем количество стикеров new + sale, 
                 int count = stikerNewElements.Count + stikerSaleElements.Count;
                 //Проверяем что на каждый товар приходится один стикер
-                Assert.IsTrue(count == 1, "Количество стикеров на товаре "
-                    +productElements[i].Text+" не равно 1");
+                if (count != 1)
+                {
+                    flag = false;
+                    message += " " + productElements[i].Text + ", ";
+                }               
+                
             }
+         Assert.IsTrue(flag, "Количество стикеров на товаре: " +
+                    message + " не равно 1");
 
         }
         [TearDown]
