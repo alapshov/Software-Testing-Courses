@@ -37,7 +37,8 @@ namespace Software_Testing_Courses
                 //Считаем количество стикеров new + sale, 
                 int count = stikerNewElements.Count + stikerSaleElements.Count;
                 //Проверяем что на каждый товар приходится один стикер
-                Assert.IsTrue(count == 1, "Количество стикеров на товаре не равно 1");
+                Assert.IsTrue(count == 1, "Количество стикеров на товаре "
+                    +productElements[i].Text+" не равно 1");
             }
 
         }
