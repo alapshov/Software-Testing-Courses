@@ -20,7 +20,7 @@ D:\Программирование\GitRepository\Software-Testing-Courses\Softw
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\nunit.framework.xml
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\WebDriver.xml
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\bin\Debug\WebDriver.Support.xml
+D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.csprojResolveAssemblyReference.cache
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.csproj.CoreCompileInputs.cache
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.dll
 D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.pdb
-D:\Программирование\GitRepository\Software-Testing-Courses\Software-Testing-Courses\obj\Debug\Software-Testing-Courses.csprojResolveAssemblyReference.cache
