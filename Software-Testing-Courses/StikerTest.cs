@@ -13,14 +13,13 @@ namespace Software_Testing_Courses
         private IWebDriver driver;
         private WebDriverWait wait;
         private ReadOnlyCollection<IWebElement> productElements;
-        private ReadOnlyCollection<IWebElement> stikerNewElements;
-        private ReadOnlyCollection<IWebElement> stikerSaleElements;
+        private ReadOnlyCollection<IWebElement> stikerElements;               
         private bool flag = true;
         string message;
 
         [SetUp]
         public void start()
-        {            
+        {        
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             driver.Manage().Window.Maximize();
@@ -30,17 +29,13 @@ namespace Software_Testing_Courses
         {
             
             driver.Url = "http://litecart-lapshov.ru/";
-            productElements = driver.FindElements(By.CssSelector("li[class='product column shadow hover-light']"));
+            productElements = driver.FindElements(By.CssSelector("li.product.column.shadow.hover-light"));
             for(int i = 0; i < productElements.Count; i++)
             {
-                stikerNewElements = productElements[i]
-                    .FindElements(By.CssSelector("div[class='sticker new']"));
-                stikerSaleElements = productElements[i]
-                    .FindElements(By.CssSelector("div[class='sticker sale']"));
-                //Считаем количество стикеров new + sale, 
-                int count = stikerNewElements.Count + stikerSaleElements.Count;
+                stikerElements = productElements[i]
+                    .FindElements(By.CssSelector("div[class *='sticker']"));      
                 //Проверяем что на каждый товар приходится один стикер
-                if (count != 1)
+                if (stikerElements.Count != 1)
                 {
                     flag = false;
                     message += " " + productElements[i].Text + ", ";
