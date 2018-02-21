@@ -29,7 +29,7 @@ namespace Software_Testing_Courses
         {
             
             driver.Url = "http://litecart-lapshov.ru/";
-            productElements = driver.FindElements(By.CssSelector("li.product.column.shadow.hover-light"));
+            productElements = driver.FindElements(By.CssSelector("li.product"));
             for(int i = 0; i < productElements.Count; i++)
             {
                 stikerElements = productElements[i]
