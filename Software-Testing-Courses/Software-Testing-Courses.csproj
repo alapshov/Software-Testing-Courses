@@ -67,6 +67,7 @@
     <Compile Include="StartBrowsers.cs" />
     <Compile Include="StikerTest.cs" />
     <Compile Include="TestMenu.cs" />
+    <Compile Include="UserRegistration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
