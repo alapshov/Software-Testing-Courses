@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddProduct.cs" />
     <Compile Include="CheckingPages.cs" />
     <Compile Include="LiteCartLoginTest.cs" />
     <Compile Include="MyFirstTest.cs" />
@@ -77,6 +78,7 @@
     <Content Include="Driver\chromedriver.exe" />
     <Content Include="Driver\geckodriver.exe" />
     <Content Include="Driver\MicrosoftWebDriver.exe" />
+    <Content Include="Image\3-red-duck-1.png" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
