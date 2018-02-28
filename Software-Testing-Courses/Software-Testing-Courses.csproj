@@ -69,6 +69,7 @@
     <Compile Include="StikerTest.cs" />
     <Compile Include="TestMenu.cs" />
     <Compile Include="UserRegistration.cs" />
+    <Compile Include="WorkWithCart.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

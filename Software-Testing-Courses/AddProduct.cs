@@ -27,7 +27,7 @@ namespace Software_Testing_Courses
         [Test]
         public void AddProductTest()
         {
-
+            
             driver.Url = "http://litecart-lapshov.ru/admin";
             string productName = DateTime.Now.ToString().Replace(" ", "").Replace(":", "");
             string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().CodeBase)+
@@ -65,7 +65,7 @@ namespace Software_Testing_Courses
             driver.FindElement(By.Name("prices[USD]")).SendKeys("50");
             driver.FindElement(By.Name("prices[EUR]")).SendKeys("50");
             driver.FindElement(By.Name("save")).Click();
-            //Проверяем что продукт добавлен
+            //Проверяем что продукт добавленм с
             Assert.IsTrue(productName == driver.FindElement(By.LinkText(productName)).Text);
         }
 
