@@ -58,8 +58,8 @@ namespace Software_Testing_Courses
         [TearDown]
         public void stop()
         {
-           // driver.Quit();
-           // driver = null;
+           driver.Quit();
+           driver = null;
         }
         //Метод определения нового окна
         public Func<IWebDriver, string> ThereIsWindowOtherThan(IList<string> oldWindows)
