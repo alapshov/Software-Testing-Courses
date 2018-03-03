@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="AddProduct.cs" />
     <Compile Include="CheckingPages.cs" />
+    <Compile Include="LinksOpenNewWindow.cs" />
     <Compile Include="LiteCartLoginTest.cs" />
     <Compile Include="MyFirstTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
