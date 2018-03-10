@@ -65,7 +65,7 @@ namespace Software_Testing_Courses
             driver.FindElement(By.Name("prices[USD]")).SendKeys("50");
             driver.FindElement(By.Name("prices[EUR]")).SendKeys("50");
             driver.FindElement(By.Name("save")).Click();
-            //Проверяем что продукт добавленм с
+            //Проверяем что продукт добавлен
             Assert.IsTrue(productName == driver.FindElement(By.LinkText(productName)).Text);
         }
 
