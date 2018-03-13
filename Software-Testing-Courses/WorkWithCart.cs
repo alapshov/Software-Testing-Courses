@@ -20,7 +20,7 @@ namespace Software_Testing_Courses
         {
 
             driver = new ChromeDriver();
-            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+                
             driver.Manage().Window.Maximize();
         }
         [Test]
